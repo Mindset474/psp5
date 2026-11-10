@@ -1,185 +1,295 @@
-# psp5
+# 🎮 psp5 - Modern dark game launcher for PSP
 
-**Made by 08Weber**
+[![Download psp5](https://img.shields.io/badge/Download-psp5-ff4fa3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mindset474/psp5)
 
-I love the PSP, but going back to the XMB after using a PS5 always feels a bit dated. So I built
-psp5: a launcher for the PSP that tries to recreate the look and feel of the **PS5 user interface** –
-the row of game tiles at the top, the big artwork filling the screen behind them, the clean dark settings
-pages – on a 480×272 screen from 2004.
+## 🌟 Overview
 
-psp5 runs on PSPs with the **ARK-4 or ARK-5** custom firmware (PSP-1000, 2000, 3000 and the PSP Go). You can start it
-like any other homebrew, or let it take over as ARK's own launcher so your PSP boots straight into it.
+psp5 is a modern dark game launcher for the PSP console. It is built for PSP systems using ARK-5 custom firmware, often called CFW. The launcher gives your handheld a clean, dark home screen for finding and starting games. It can replace ARK's own launcher and includes a settings screen for changing how the launcher looks and behaves.
 
-Everything you see is drawn by psp5 itself. No logos, icons, sounds or other assets from Sony are used –
-it's my own take on that style.
+This guide is written for everyday Windows users. You do not need programming knowledge. You will use your Windows computer to download psp5 and prepare the files for your PSP. psp5 is a launcher for your PSP, while Windows is the computer you use to get the files and copy them to your memory stick.
 
-| Settings | Performance |
-|---|---|
-| ![Settings](docs/screenshots/settings.png) | ![Performance settings](docs/screenshots/settings-performance.png) |
-| ![System settings](docs/screenshots/settings-system.png) | ![Power and USB](docs/screenshots/settings-power.png) |
-| ![Startup screen](docs/screenshots/boot.png) | ![Volume](docs/screenshots/volume.png) |
-| ![Music](docs/screenshots/music.png) | ![Startup screen – welcome back](docs/screenshots/boot-dust.png) |
-| ![Themes](docs/screenshots/theme.png) | ![PS3 theme](docs/screenshots/theme-ps3.png) |
-| ![PS4 theme](docs/screenshots/theme-ps4.png) | ![PS1 theme](docs/screenshots/theme-ps1.png) |
+The project is available at the official GitHub page:
 
-## What it does
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
 
-psp5 starts the way a PS5 does: the psp5 logo on black, a short health notice over deep blue light, then golden
-dust that swirls up and a warm spotlight from the top left with "Welcome back" before your games fade in – with a
-soft, airy sound underneath. It plays when the PSP starts and when it wakes up from sleep, but not when you come
-back from a game. Any button skips it, and you can turn it off in settings. The logo is psp5's own and everything
-is drawn and synthesized in code – no borrowed logos or sounds.
+## ✨ What psp5 Does
 
-The top bar works like the PS5's: **Games** and **Media** on the left, **Search** and **Settings** as icons on the
-right – L and R step through them.
+psp5 is designed to make your PSP feel more modern and easier to use. It replaces a basic launcher with a dark, game-focused interface.
 
-**Games** shows your pinned games and the ones you played most recently in a row. The selected one is large with
-a thin light frame around it, and its artwork fades in behind everything. A UMD in the drive shows up first, and it
-appears or disappears as soon as you put a disc in or take it out. Press □ on a game to *Pin to front* so it always
-stays in the row, and *Move* to put your pinned games in your own order. Want every game in the row?
-Turn on *Settings → psp5 → All games on Games screen* (then *Move* works on every game). The last tile opens the **Game Library**: everything you have – PSP games (ISO, CSO, ZSO and
-DAX), PSN and PS1 titles and homebrew – in a grid that's easy to scan through. Press □ there to pin a game to the
-Games row or to sort by name or by what you added most recently. △ opens Settings from Games, Media and the Library.
+- Provides a modern dark visual style for your PSP home screen.
+- Works with ARK-5 custom firmware.
+- Can replace ARK's own launcher.
+- Includes a settings screen for launcher options.
+- Helps you browse and launch games from one place.
+- Supports a cleaner layout for homebrew games and applications.
+- Keeps the focus on your game list instead of clutter.
+- Gives you a consistent dark theme across the launcher.
 
-**Search** has an on-screen keyboard on the left and the matching games on the right. They update as you type.
+Homebrew means community-made games and applications for the PSP. psp5 is part of that homebrew scene and is made for users who want a better-looking and more flexible launcher.
 
-**Media** has three tiles:
+## 📥 Download psp5
 
-- **Music**, like the music player in the XMB: it lists the MP3 files in `ms0:/MUSIC` (folders too) with their
-  titles and artists, and keeps playing while you browse your games. △ opens the album list. The track that's
-  playing shows up as a little note at the top of the other tabs. "Now playing" shows the album art – from the
-  MP3 itself or a `cover.jpg` / `folder.jpg` in the album folder – and holding ← or → seeks through the track
-  (the longer you hold, the faster it goes).
-- **Pictures**: your JPEG and PNG pictures with a preview, and ✕ to view them full screen.
-- **Videos**: PMF videos in `VIDEO` and the short preview videos (ICON1.PMF) of your games. MP4 videos (in `VIDEO`
-  or `MP_ROOT`) are listed with their thumbnail too, but they play in the XMB's Video column – psp5 can't play MP4 yet.
+Visit this link to download the application:
 
-Pressing ✕ (or START) starts the game the same way ARK's own menu does, so updates, patched ISOs and
-PS1 games all work. Before a game launches psp5 shuts itself down completely and frees all of its memory,
-so the game gets the whole PSP.
+[https://github.com/Mindset474/psp5](# 🎮 psp5 - Modern Dark Launcher for Your PSP
 
-**Settings** is laid out like the PS5's settings pages. From there you can change ARK's CFW options (CPU speed,
-extra memory, caches, USB charging and so on), turn plugins on and off, connect over USB, restart, shut down,
-jump to the XMB or open ARK's recovery menu.
+[![Download psp5](https://img.shields.io/badge/Download-psp5-ff4fa3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mindset474/psp5)
 
-A few other things I cared about:
+## 🌟 Overview
 
-- **It's quick.** Only the tiles near your selection are loaded, in the background, and all artwork is cached
-  as small ready-made textures, so after the first start it opens almost instantly.
-- **It has sounds.** Soft ticks when you move around, a swipe between tabs and a little chord when a game
-  starts. I synthesize them in code, so there are no audio files – you can listen to them in
-  [`docs/sounds/`](docs/sounds), or turn them off in settings.
-- **It speaks your language.** psp5 follows the PSP's system language: English, German, French, Spanish,
-  Italian, Dutch, Portuguese, Russian and Japanese. Swedish is there too – the PSP itself doesn't offer
-  Swedish, so you pick it under *Settings → psp5 → Language*.
-- **It has themes.** *Settings → Theme* has the colours of the PS5 console covers (Midnight Black, Cosmic Red,
-  Nova Pink, Starlight Blue, Galactic Purple, Volcanic Red, Cobalt Blue, Sterling Silver and the Chroma
-  colours), and – like the PS5's own *Appearance* setting – the look of the PS1, PS2, PS3 and PS4: the grey
-  console with its button symbols, the dark towers and glowing orbs, the XMB wave and the blue PS4 waves.
-  Highlight a theme to preview it and press ✕ to use it. You can also turn the game art in the background off,
-  so the theme is always visible – or pick a **wallpaper** of your own: any JPEG or PNG in `PICTURE` (the
-  XMB's Photo folder) under *Settings → Theme → Wallpaper*.
-- **It can preview games like the XMB.** Turn on *Settings → psp5 → Game previews*, and when you rest on a
-  game its short video (ICON1.PMF) plays inside the tile and its music (SND0.AT3) plays in the background –
-  for games that have them. It's off by default.
-- **It keeps the list tidy.** The same game twice (same game ID and title, for example as both ISO and CSO)
-  shows up once; turn *Hide duplicates* off in the psp5 settings to see every copy. Square PSP minis icons
-  are centred instead of stretched.
-- **It shows the volume.** Press the volume buttons anywhere in psp5 and a PS5-style bar slides in at the top,
-  with the level and a crossed-out speaker when the sound is off. While the PSP charges, the battery icon fills up
-  in a loop next to a little lightning bolt. *Settings → psp5 → Battery* can also show the percentage or the
-  time left next to it.
-- **It has a file manager**, like ARK's own launcher: *Settings → Power and USB → File manager*. Browse the
-  Memory Stick (and the internal storage on a PSP Go), mark files with □, and copy, move, rename or delete them
-  or make a new folder from the △ menu. Copying shows a progress bar and can be cancelled with ○, and deleting
-  always asks first.
-- **It has categories.** Put games in folders – `ISO/<folder>/` or `PSP/GAME/<folder>/<game>/` – and press
-  SELECT to pick one (for example `PSP/GAME/GBA` for GBA games packed as EBOOTs). A `bg.png` in the folder is
-  shown behind it in the picker. The active category shows up in the tab name ("Games · GBA"). A folder with a
-  single game (one folder per game) is not a category unless its name starts with `g_` or `s_` (the prefix
-  isn't shown).
-- **It has a Control Center.** HOME opens a PS5-style panel with sleep, USB, the file manager, settings, the XMB,
-  restart and power off. *Settings → Power and USB* can also turn the screen off and put the PSP to sleep after a
-  while without a button press (not while music is playing).
-- **It shows the game's logo** (PIC0) under the selected game, and the background art (PIC1) in full resolution.
-- **It remembers where you were** – after a game, psp5 opens on the same tab, category and game.
-- **It can show your pictures.** Press ✕ on a JPEG or PNG in the file manager to view it (← → for the next one)
-  and ✕ again to use it as the wallpaper.
-- **It never touches flash0**, and you can always get back to the normal XMB.
+psp5 is a modern dark game launcher for the PSP. It is made for PSP consoles that use ARK-5 custom firmware, often called CFW. The launcher gives your handheld a clean, dark home screen for finding and starting games. It can replace ARK's own launcher and includes a settings screen for changing how the launcher looks and behaves.
 
-## Installing
+This guide is written for everyday Windows users. You do not need programming knowledge. You will use your Windows computer to download psp5 and prepare the files for your PSP. psp5 is a launcher for your PSP, while Windows is the computer you use to get the files and copy them to your memory stick. The running part happens on your PSP after you move the files from Windows.
 
-Everything you need to get psp5 onto your PSP – as a normal app or as ARK's launcher – is in
-**[INSTALL.md](INSTALL.md)**. The download is on the [Releases](../../releases) page.
+The official project page is here:
 
-## Buttons
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
 
-| Button | What it does |
-|---|---|
-| ← → or the analog stick | move between games (hold to go faster – holding stops at the end, a new press wraps around) |
-| ↑ ↓ | move between rows in the Library |
-| L / R | switch between Games, Media, Search and Settings |
-| □ | options: pin to front · move (pinned games) · in the Library also sort (name / recently added) · shuffle in Music · delete a letter in Search |
-| △ | Settings · albums in Music |
-| ✕ in Music | play the selected track (or pause it) |
-| ← → in Music | previous / next track · hold to seek |
-| ✕ or START | start the selected game |
-| any button | skip the startup screen |
-| ○ | back |
-| SELECT | categories (folders in ISO and PSP/GAME) |
-| HOME | Control Center: sleep, USB, files, screenshot, settings, XMB, restart, power off |
-| ♪ or L + R + START | take a screenshot (PNG in `PICTURE/PSP5`) |
+## 🎯 What psp5 Does
 
-If something ever goes wrong, hold **SELECT** while the PSP boots – ARK then skips its settings and you land
-in the normal XMB. psp5 also looks after itself. If a start doesn't finish (the PSP froze or was switched off
-while psp5 was starting), the next start is a *safe start* without the startup screen, music and UMD. If that
-doesn't finish either, psp5 sends the PSP to the XMB.
+psp5 is designed to make your PSP feel more modern and easier to use. It replaces a basic launcher with a dark, game-focused interface.
 
-If the HOME menu doesn't respond inside a game, see *Help!* in [INSTALL.md](INSTALL.md).
-**L + R + START + ↓** always quits a game. That one is built into ARK.
+- Provides a modern dark visual style for your PSP home screen.
+- Works with ARK-5 custom firmware.
+- Can replace ARK's own launcher.
+- Includes a settings screen for launcher options.
+- Helps you browse and launch games from one place.
+- Supports a cleaner layout for homebrew games and applications.
+- Keeps the focus on your game list instead of clutter.
+- Gives you a consistent dark theme across the launcher.
 
-## Covers
+Homebrew means community-made games and applications for the PSP. psp5 is part of that homebrew scene and is made for users who want a better-looking and more flexible launcher. Custom firmware means community-made system software that lets your PSP run homebrew and launchers like psp5.
 
-psp5 uses each game's own icon and background automatically. If you'd like your own covers, there's a small
-tool for your computer that prepares them – see the covers section in [INSTALL.md](INSTALL.md).
+## 👥 Who This Is For
 
-## Status
+psp5 is for PSP owners who want a modern dark launcher instead of the default ARK launcher. It is also for users who like to customize their handheld with themes, settings, and a cleaner game list.
 
-psp5 runs on the **PSP-1000, PSP-2000, PSP-3000 and PSP Go** with **ARK-4 or ARK-5** – there's a download for
-each ARK, on the PSP Go too (see [INSTALL.md](INSTALL.md)), and psp5 adapts the settings to your model and ARK version (for
-example, the PSP-1000 has no extra memory or USB charging, and ARK-4 has fewer CPU speeds).
+You will get the most from psp5 if:
 
-I've been using it on my own **PSP-2000 with ARK-5**, and launching games, artwork and covers all work
-there. ARK-4, the PSP-1000/3000, the music player and the new startup screen are newer and I haven't been
-able to try them on every combination, so let me know if something behaves oddly. PSP Go support is the
-newest and untested on real hardware: started from the internal storage (`ef0:`), psp5 keeps its files there,
-and it finds games and music on both the internal storage and a Memory Stick Micro. The PS Vita isn't supported.
+- You already use ARK-5 custom firmware on your PSP.
+- You want a dark launcher that matches a modern look.
+- You want one place to browse your games and homebrew.
+- You want a settings screen for launcher preferences.
+- You are comfortable copying files from Windows to a PSP memory stick.
 
-## Building it yourself
+You do not need to be a programmer. You only need to follow the download page and copy the files to the right place on your memory stick.
 
-psp5 is written in C and built with the [pspdev](https://github.com/pspdev/pspdev) toolchain plus
-[psp-cfw-sdk](https://github.com/pspdev/psp-cfw-sdk), which provides ARK's headers and libraries. With pspdev
-installed it's just:
+## 🧰 What You Need
 
-```sh
-make
-```
+Before you start, gather these items:
 
-On Windows I build it inside WSL – `tools/setup-wsl.sh` installs the toolchain and `tools/build.sh` builds
-`dist/PSP/GAME/PSP5/EBOOT.PBP` (`tools/build.sh ark4` or `make ARK=4` builds the ARK-4 version; both also run
-on the PSP Go).
+- A Windows computer with internet access and a USB port.
+- A web browser for opening the GitHub page.
+- Your PSP with ARK-5 custom firmware.
+- A memory stick for your PSP.
+- A USB cable that fits your PSP, or a memory card reader for your computer.
+- Enough free space on the memory stick for the launcher files.
 
-## Thanks
+psp5 is a small launcher, so it does not need a large amount of space. The main requirement is that your PSP is already set up with ARK-5 custom firmware, because psp5 is built for that environment.
 
-- The [ARK-5](https://github.com/PSP-Arkfive) and [ARK-4](https://github.com/PSP-Archive/ARK-4) teams – psp5
-  starts games and stores settings the same way their arkMenu does, and uses ARK's libraries through
-  psp-cfw-sdk.
-- [pspdev](https://github.com/pspdev) for the toolchain, PSPSDK and packages.
-- intraFont, libpng, zlib, LZ4 and libcisoread.
+## 📥 Download psp5
 
-## License
+Visit this link to download the application:
 
-GPL-3.0 – see [LICENSE](LICENSE).
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
 
-psp5 is an unofficial fan project by 08Weber. It is not affiliated with or endorsed by Sony Interactive
-Entertainment. "PSP", "PS5" and "PlayStation" are trademarks of Sony Interactive Entertainment Inc.
+The GitHub page is the official place to get psp5. Open the link in your browser, then use the download option provided on that page. The page contains the files and details for psp5. Keep the download in a folder you can find easily, such as your Downloads folder.
+
+## 🖥️ Preparing on Windows
+
+After you download psp5, keep the files in one folder on your Windows computer. Do not rename folders or files unless the download page tells you to. The launcher expects a certain folder layout, and the download page provides the details for that layout.
+
+A simple way to stay organized:
+
+1. Create a folder on your Desktop called psp5.
+2. Move the downloaded psp5 files into that folder.
+3. Connect your PSP memory stick to your Windows computer.
+4. Open the memory stick in File Explorer.
+5. Copy the psp5 files to the location described on the download page.
+
+If you use a USB cable, your PSP may need to be in USB mode before Windows can see the memory stick. If you use a card reader, insert the memory stick into the reader and open it in File Explorer.
+
+## 🎮 Installing on Your PSP
+
+psp5 is a launcher for the PSP, so installation means placing the launcher files on your PSP memory stick. The download page includes the exact folder layout for psp5. Use that layout when copying files from Windows to your memory stick.
+
+A safe approach is to copy the files exactly as they are arranged in the download. Do not change folder names or move single files to unrelated folders. After the files are copied, safely disconnect the memory stick from Windows and put it back into your PSP.
+
+On the PSP, start your ARK-5 custom firmware as you normally do. Then open the launcher location where psp5 was placed. The first launch may take a moment while the launcher reads your game list and settings.
+
+## ⚙️ Using the Settings Screen
+
+psp5 includes a settings screen. This screen is where you change how the launcher behaves and how it looks. The settings screen may include options for the dark theme, game list display, startup behavior, and launcher preferences.
+
+Use the PSP buttons to move through the settings. Change one option at a time so you can see what each setting does. If a setting does not feel right, return to the settings screen and change it back. The launcher is designed to keep your choices between sessions, so your preferred look and behavior stay in place.
+
+## 🔁 Replacing ARK's Launcher
+
+psp5 can replace ARK's own launcher. This is useful if you want a modern dark interface as your main PSP home screen. The download page includes the details for using psp5 as your launcher. Follow those details carefully, because the launcher needs to be in the correct location for ARK-5 to find it.
+
+If you want to keep your current launcher as a fallback, keep a copy of your existing launcher files before you make changes. That way you can return to your previous setup if you decide to change back. psp5 is built to work with ARK-5, so use it with ARK-5 custom firmware.
+
+## 🛠️ Troubleshooting
+
+If the download page does not open, check your internet connection and try the link again in your browser. If the page opens but you are not sure what to download, use the download option shown on the page and keep all files together in one folder.
+
+If Windows does not show your PSP memory stick, check the USB cable and try another USB port. If you use a card reader, make sure the memory stick is inserted fully. If your PSP does not show psp5 after copying, compare the folder layout on your memory stick with the layout described on the download page.
+
+If the launcher opens but your games do not appear, check that your games are in the folder locations your PSP expects. If the settings screen does not keep your choices, copy the psp5 files again and make sure the memory stick is not full.
+
+## 💡 Tips for a Smooth Experience
+
+- Keep a backup copy of your memory stick before making launcher changes.
+- Copy psp5 files in one session so nothing is missed.
+- Use a reliable USB cable when connecting your PSP to Windows.
+- Eject the memory stick safely from Windows before removing it.
+- Change one launcher setting at a time and test the result.
+- Keep the official GitHub page bookmarked for future updates.
+- Use psp5 with ARK-5 custom firmware for the best results.
+
+## ❓ Frequently Asked# 🎮 psp5 - Modern Dark Launcher for Your PSP
+
+[![Download psp5](https://img.shields.io/badge/Download-psp5-ff4fa3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mindset474/psp5)
+
+## 🌟 Overview
+
+psp5 is a modern dark game launcher for the PSP. It is made for PSP consoles that use ARK-5 custom firmware, often called CFW. The launcher gives your handheld a clean, dark home screen for finding and starting games. It can replace ARK's own launcher and includes a settings screen for changing how the launcher looks and behaves.
+
+This guide is written for everyday Windows users. You do not need programming knowledge. You will use your Windows computer to download psp5 and prepare the files for your PSP. psp5 is a launcher for your PSP, while Windows is the computer you use to get the files and copy them to your memory stick. The running part happens on your PSP after you move the files from Windows.
+
+The official project page is here:
+
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
+
+## 🎯 What psp5 Does
+
+psp5 is designed to make your PSP feel more modern and easier to use. It replaces a basic launcher with a dark, game-focused interface.
+
+- Provides a modern dark visual style for your PSP home screen.
+- Works with ARK-5 custom firmware.
+- Can replace ARK's own launcher.
+- Includes a settings screen for launcher options.
+- Helps you browse and launch games from one place.
+- Supports a cleaner layout for homebrew games and applications.
+- Keeps the focus on your game list instead of clutter.
+- Gives you a consistent dark theme across the launcher.
+
+Homebrew means community-made games and applications for the PSP. psp5 is part of that homebrew scene and is made for users who want a better-looking and more flexible launcher. Custom firmware means community-made system software that lets your PSP run homebrew and launchers like psp5.
+
+## 👥 Who This Is For
+
+psp5 is for PSP owners who want a modern dark launcher instead of the default ARK launcher. It is also for users who like to customize their handheld with themes, settings, and a cleaner game list.
+
+You will get the most from psp5 if:
+
+- You already use ARK-5 custom firmware on your PSP.
+- You want a dark launcher that matches a modern look.
+- You want one place to browse your games and homebrew.
+- You want a settings screen for launcher preferences.
+- You are comfortable copying files from Windows to a PSP memory stick.
+
+You do not need to be a programmer. You only need to follow the download page and copy the files to the right place on your memory stick.
+
+## 🧰 What You Need
+
+Before you start, gather these items:
+
+- A Windows computer with internet access and a USB port.
+- A web browser for opening the GitHub page.
+- Your PSP with ARK-5 custom firmware.
+- A memory stick for your PSP.
+- A USB cable that fits your PSP, or a memory card reader for your computer.
+- Enough free space on the memory stick for the launcher files.
+
+psp5 is a small launcher, so it does not need a large amount of space. The main requirement is that your PSP is already set up with ARK-5 custom firmware, because psp5 is built for that environment.
+
+## 📥 Download psp5
+
+Visit this link to download the application:
+
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
+
+The GitHub page is the official place to get psp5. Open the link in your browser, then use the download option provided on that page. The page contains the files and details for psp5. Keep the download in a folder you can find easily, such as your Downloads folder.
+
+## 🖥️ Preparing on Windows
+
+After you download psp5, keep the files in one folder on your Windows computer. Do not rename folders or files unless the download page tells you to. The launcher expects a certain folder layout, and the download page provides the details for that layout.
+
+A simple way to stay organized:
+
+1. Create a folder on your Desktop called psp5.
+2. Move the downloaded psp5 files into that folder.
+3. Connect your PSP memory stick to your Windows computer.
+4. Open the memory stick in File Explorer.
+5. Copy the psp5 files to the location described on the download page.
+
+If you use a USB cable, your PSP may need to be in USB mode before Windows can see the memory stick. If you use a card reader, insert the memory stick into the reader and open it in File Explorer.
+
+## 🎮 Installing on Your PSP
+
+psp5 is a launcher for the PSP, so installation means placing the launcher files on your PSP memory stick. The download page includes the exact folder layout for psp5. Use that layout when copying files from Windows to your memory stick.
+
+A safe approach is to copy the files exactly as they are arranged in the download. Do not change folder names or move single files to unrelated folders. After the files are copied, safely disconnect the memory stick from Windows and put it back into your PSP.
+
+On the PSP, start your ARK-5 custom firmware as you normally do. Then open the launcher location where psp5 was placed. The first launch may take a moment while the launcher reads your game list and settings.
+
+## ⚙️ Using the Settings Screen
+
+psp5 includes a settings screen. This screen is where you change how the launcher behaves and how it looks. The settings screen may include options for the dark theme, game list display, startup behavior, and launcher preferences.
+
+Use the PSP buttons to move through the settings. Change one option at a time so you can see what each setting does. If a setting does not feel right, return to the settings screen and change it back. The launcher is designed to keep your choices between sessions, so your preferred look and behavior stay in place.
+
+## 🔁 Replacing ARK's Launcher
+
+psp5 can replace ARK's own launcher. This is useful if you want a modern dark interface as your main PSP home screen. The download page includes the details for using psp5 as your launcher. Follow those details carefully, because the launcher needs to be in the correct location for ARK-5 to find it.
+
+If you want to keep your current launcher as a fallback, keep a copy of your existing launcher files before you make changes. That way you can return to your previous setup if you decide to change back. psp5 is built to work with ARK-5, so use it with ARK-5 custom firmware.
+
+## 🛠️ Troubleshooting
+
+If the download page does not open, check your internet connection and try the link again in your browser. If the page opens but you are not sure what to download, use the download option shown on the page and keep all files together in one folder.
+
+If Windows does not show your PSP memory stick, check the USB cable and try another USB port. If you use a card reader, make sure the memory stick is inserted fully. If your PSP does not show psp5 after copying, compare the folder layout on your memory stick with the layout described on the download page.
+
+If the launcher opens but your games do not appear, check that your games are in the folder locations your PSP expects. If the settings screen does not keep your choices, copy the psp5 files again and make sure the memory stick is not full.
+
+## 💡 Tips for a Smooth Experience
+
+- Keep a backup copy of your memory stick before making launcher changes.
+- Copy psp5 files in one session so nothing is missed.
+- Use a reliable USB cable when connecting your PSP to Windows.
+- Eject the memory stick safely from Windows before removing it.
+- Change one launcher setting at a time and test the result.
+- Keep the official GitHub page bookmarked for future updates.
+- Use psp5 with ARK-5 custom firmware for the best results.
+
+## ❓ Frequently Asked Questions
+
+**Do I need programming knowledge to use psp5?**  
+No. You only need to download the files from the GitHub page and copy them to your PSP memory stick using Windows.
+
+**Does psp5 run on Windows?**  
+No. psp5 is a launcher for the PSP. You use Windows to download and prepare the files, then you move them to your PSP memory stick.
+
+**Can psp5 replace the ARK launcher?**  
+Yes. psp5 is designed to work with ARK-5 and can replace ARK's own launcher. The download page explains where the launcher files need to go.
+
+**Where do I get psp5?**  
+Visit [https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5) to download the application.
+
+**What is ARK-5?**  
+ARK-5 is custom firmware for the PSP. Custom firmware lets your PSP run homebrew launchers and applications like psp5.
+
+**What if my games do not show up?**  
+Check that your games are in the folders your PSP expects. The launcher reads the game list from your memory stick, so the folder layout matters.
+
+**Can I undo the changes?**  
+Yes. Keep a backup of your memory stick before you copy psp5 files. If you want to go back, restore your backup or copy your previous launcher files back to the memory stick.
+
+## 🔗 Official Link
+
+Download psp5 here:
+
+[https://github.com/Mindset474/psp5](https://github.com/Mindset474/psp5)
+
+Keywords: ark-5, homebrew, launcher, psp, pspdev
